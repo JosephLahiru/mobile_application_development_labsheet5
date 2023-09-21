@@ -44,7 +44,7 @@ android:weightSum="9.5"
     android:background="#358a32"
     android:textSize="20dp"
     android:layout_margin="5dp"
-    android:layout_weight="0.6"
+    android:layout_weight="0.5"
     android:layout_gravity="right"
     />
 
