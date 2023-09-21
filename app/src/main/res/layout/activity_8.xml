@@ -1,9 +1,98 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".exercise_04_relative_layouts.Activity8">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <!-- Top Left -->
+    <Button
+        android:id="@+id/top_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:text="Button 1"
+        android:layout_marginStart="10dp"
+
+        />
+
+    <!-- Top Center -->
+
+    <!--    &lt;!&ndash; Top Right &ndash;&gt;-->
+<!--    <Button-->
+<!--        android:id="@+id/top_right"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:layout_alignParentRight="true"-->
+<!--        android:text="Top Right"-->
+<!--        android:textSize="20sp" />-->
+
+    <!-- Middle Left -->
+    <Button
+        android:id="@+id/top_center"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="10dp"
+        android:layout_toEndOf="@+id/top_left"
+        android:text="Button 7" />
+
+    <Button
+        android:id="@+id/middle_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"
+        android:text="Button 3"
+        android:layout_marginStart="10dp"
+        />
+
+    <!-- Middle Center -->
+    <Button
+        android:id="@+id/middle_center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Button 5" />
+
+    <!-- Middle Right -->
+    <Button
+        android:id="@+id/middle_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:text="Button 2"
+        android:layout_marginEnd="10dp"/>
+
+    <!-- Bottom Center -->
+
+    <!-- Bottom Center -->
+
+    <Button
+        android:id="@+id/bottom_center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottom_center2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="151dp"
+        android:layout_marginEnd="152dp"
+        android:layout_marginBottom="10dp"
+        android:text="Button 6" />
+
+    <Button
+        android:id="@+id/bottom_center2"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Button 4"/>
+
+</RelativeLayout>
